@@ -1,144 +1,314 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/design_default_color_secondary"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:layout_width="413dp"
-        android:layout_height="779dp"
-        android:orientation="vertical"
-        tools:layout_editor_absoluteX="-1dp"
-        tools:layout_editor_absoluteY="1dp"
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mainScrollView1"
         tools:ignore="MissingConstraints">
 
         <LinearLayout
+            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="221dp"
-            android:background="@color/teal_200"
-            android:orientation="vertical">
+            android:layout_height="match_parent"
+            android:id="@+id/WIND_LINEAR"
+            android:background="#4D6774"
+            tools:ignore="ScrollViewSize">
 
             <TextView
-                android:id="@+id/smaliya"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="smaliya"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/setborder1"
+                android:layout_margin="2.5dp"
+                android:id="@+id/START"
+                tools:ignore="HardcodedText" />
+
+            <LinearLayout
+                android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/teal_200"
-                android:gravity="center"
-                android:text="SMALIYA"
-                android:textColor="#000000" />
-        </LinearLayout>
+                android:background="@drawable/setborder">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="267dp"
-            android:gravity="center"
-            android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="输入"
+                    android:textColor="#FFFFFF"
+                    android:id="@+id/LABL_I"
+                    android:layout_margin="2.5dp"
+                    android:background="@drawable/setborder1"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2.5dp"
+                    android:background="@drawable/setborder1g"
+                    android:textColor="#FFFFFF"
+                    android:id="@+id/I_consol" />
+
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/setborder1"
                 android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/bnt_A"
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="120dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@color/teal_700"
-                    android:gravity="center"
-                    android:rotationY="360"
-                    android:text="AAAA"
-                    android:textColor="@color/white" />
+                    android:background="@drawable/setborder1"
+                    android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/bnt_B"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@color/teal_700"
-                    android:gravity="center"
-                    android:text="BBBB"
-                    android:textColor="@color/white" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/setborder1"
+                        android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/bnt_C"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@color/teal_700"
-                    android:gravity="center"
-                    android:text="CCCC"
-                    android:textColor="@color/white" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2.5dp"
+                            android:background="@drawable/setborder1"
+                            android:text="数据集:"
+                            android:textColor="#FFFFFF"
+                            tools:ignore="HardcodedText" />
 
-                <TextView
-                    android:id="@+id/bnt_D"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@color/teal_700"
-                    android:gravity="center"
-                    android:text="DDDD"
-                    android:textColor="@color/white" />
+                        <TextView
+                            android:id="@+id/setDataSet"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2.5dp"
+                            android:background="@drawable/setborder1r"
+                            android:gravity="center_horizontal"
+                            android:hint="以','读取"
+                            tools:ignore="HardcodedText" />
 
-                <TextView
-                    android:id="@+id/bnt_E"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@color/teal_700"
-                    android:gravity="center"
-                    android:text="EEEE"
-                    android:textColor="@color/white" />
+                    </LinearLayout>
 
-                <TextView
-                    android:id="@+id/bnt_F"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@color/teal_700"
-                    android:gravity="center"
-                    android:text="FFFF"
-                    android:textColor="@color/white"
-                    tools:ignore="DuplicateIds" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/setborder1"
+                        android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/bnt_F"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@color/teal_700"
-                    android:gravity="center"
-                    android:text="FFFF"
-                    android:textColor="@color/white"
-                    tools:ignore="DuplicateIds" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2.5dp"
+                            android:background="@drawable/setborder1"
+                            android:text="几输入:"
+                            android:textColor="#FFFFFF"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:id="@+id/setInputNum"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2.5dp"
+                            android:background="@drawable/setborder1r"
+                            android:gravity="center_horizontal"
+                            android:hint="几输入"
+                            tools:ignore="HardcodedText" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/setborder1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2.5dp"
+                            android:background="@drawable/setborder1"
+                            android:text="图示例:"
+                            android:textColor="#FFFFFF"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:id="@+id/setInputViewStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2.5dp"
+                            android:background="@drawable/setborder1r"
+                            android:gravity="center_horizontal"
+                            android:text="+-x-o"
+                            tools:ignore="HardcodedText" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/I_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2.5dp"
+                    android:background="@drawable/setborder1">
+
+                </RelativeLayout>
 
             </LinearLayout>
 
-            <ScrollView
-                android:layout_width="413dp"
-                android:layout_height="246dp"
-                android:background="@android:drawable/gallery_thumb"
-                android:padding="2px"
-                android:paddingStart="2px"
-                android:paddingLeft="2px"
-                android:paddingTop="2px"
-                android:paddingEnd="2px"
-                android:paddingRight="2px"
-                android:paddingBottom="2px">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/setborder">
 
                 <TextView
-                    android:id="@+id/win_A"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="权重"
+                    android:textColor="#FFFFFF"
+                    android:id="@+id/LABL_W"
+                    android:background="@drawable/setborder1"
+                    android:layout_margin="2.5dp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="left"
-                    android:text="TextView"
-                    android:textColor="@color/black" />
-            </ScrollView>
+                    android:layout_margin="2.5dp"
+                    android:background="@drawable/setborder1g"
+                    android:textColor="#FFFFFF"
+                    android:id="@+id/W_consol" />
+
+            </LinearLayout>
+
+            <RadioGroup
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/W_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@drawable/setborder1"
+                    android:orientation="horizontal" />
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/setborder">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="阀值"
+                    android:id="@+id/LABL_B"
+                    android:textColor="#FFFFFF"
+                    android:layout_margin="2.5dp"
+                    android:background="@drawable/setborder1"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2.5dp"
+                    android:background="@drawable/setborder1g"
+                    android:textColor="#FFFFFF"
+                    android:id="@+id/B_consol" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:id="@+id/B_view"
+                android:background="@drawable/setborder1" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/setborder"
+                tools:ignore="DuplicateIds">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="函数"
+                    android:layout_margin="2.5dp"
+                    android:background="@drawable/setborder1"
+                    android:textColor="#FFFFFF"
+                    android:id="@+id/LABLE_F"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2.5dp"
+                    android:background="@drawable/setborder1g"
+                    android:textColor="#FFFFFF"
+                    android:id="@+id/F_consol" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/setborder1"
+                android:textColor="#FFFFFF"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/OUPT_FUNCTION"
+                android:background="@drawable/setborder">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="图形"
+                    android:layout_margin="2.5dp"
+                    android:background="@drawable/setborder1"
+                    android:textColor="#FFFFFF"
+                    android:id="@+id/LABLE_V"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2.5dp"
+                    android:background="@drawable/setborder1g"
+                    android:textColor="#FFFFFF"
+                    android:id="@+id/V_consol" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="@drawable/setborder1"
+                android:textColor="#FFFFFF"
+                android:id="@+id/F_view"
+                android:orientation="horizontal" />
 
         </LinearLayout>
 
-    </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
